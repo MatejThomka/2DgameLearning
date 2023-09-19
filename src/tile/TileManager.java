@@ -30,11 +30,11 @@ public class TileManager {
 
       setup(0, "grass", false);
       setup(1, "flower_grass", false);
-      setup(2, "grass_with_wall1", false);
-      setup(3, "grass_with_wall2", false);
+      setup(2, "dirt_path_T_D", false);
+      setup(3, "dirt_path_T_L", false);
       setup(4, "wall1", true);
-      setup(5, "wall2", true);
-      setup(6, "wall_corner", true);
+      setup(5, "dirt_path_T_R", true);
+      setup(6, "dirt_path_T_U", true);
       setup(7, "water1", true);
       setup(8, "water2", true);
       setup(9, "dirt", false);
