@@ -19,7 +19,7 @@ public class TileManager {
   public TileManager(GamePanel gamePanel) {
     this.gamePanel = gamePanel;
 
-    tiles = new Tile[51];
+    tiles = new Tile[69];
     mapTileNum = new int[gamePanel.maxWorldCol][gamePanel.maxWorldRow];
 
     getTileImage();
@@ -36,7 +36,7 @@ public class TileManager {
       setup(5, "dirt_path_T_R", false);
       setup(6, "dirt_path_T_U", false);
       setup(7, "dirt_grass", false);
-      setup(8, "water2", true);
+      setup(8, "wooden_bridge", false);
       setup(9, "dirt", false);
       setup(10, "sand", false);
       setup(11, "tree", true);
@@ -76,6 +76,27 @@ public class TileManager {
       setup(45, "dirt_path_startOfPath_L", false);
       setup(46, "dirt_path_startOfPath_R", false);
       setup(47, "dirt_path_startOfPath_U", false);
+      setup(48, "sand_grass", false);
+      setup(49, "sand_grass_D", false);
+      setup(50, "sand_grass_DL", false);
+      setup(51, "sand_grass_DR", false);
+      setup(52, "sand_grass_L", false);
+      setup(53, "sand_grass_R", false);
+      setup(54, "sand_grass_U", false);
+      setup(55, "sand_grass_UL", false);
+      setup(56, "sand_grass_UR", false);
+      setup(57, "water_DL", true);
+      setup(58, "water_DR", true);
+      setup(59, "water_UL", true);
+      setup(60, "water_UR", true);
+      setup(61, "water_sand_D", true);
+      setup(62, "water_sand_DL", true);
+      setup(63, "water_sand_DR", true);
+      setup(64, "water_sand_L", true);
+      setup(65, "water_sand_R", true);
+      setup(66, "water_sand_U", true);
+      setup(67, "water_sand_UL", true);
+      setup(68, "water_sand_UR", true);
 
 
   }
