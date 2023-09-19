@@ -33,9 +33,9 @@ public class TileManager {
       setup(2, "dirt_path_T_D", false);
       setup(3, "dirt_path_T_L", false);
       setup(4, "wall1", true);
-      setup(5, "dirt_path_T_R", true);
-      setup(6, "dirt_path_T_U", true);
-      setup(7, "water1", true);
+      setup(5, "dirt_path_T_R", false);
+      setup(6, "dirt_path_T_U", false);
+      setup(7, "dirt_grass", false);
       setup(8, "water2", true);
       setup(9, "dirt", false);
       setup(10, "sand", false);
