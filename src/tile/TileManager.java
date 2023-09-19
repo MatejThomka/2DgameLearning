@@ -19,7 +19,7 @@ public class TileManager {
   public TileManager(GamePanel gamePanel) {
     this.gamePanel = gamePanel;
 
-    tiles = new Tile[21];
+    tiles = new Tile[33];
     mapTileNum = new int[gamePanel.maxWorldCol][gamePanel.maxWorldRow];
 
     getTileImage();
@@ -37,7 +37,7 @@ public class TileManager {
       setup(6, "wall_corner", true);
       setup(7, "water1", true);
       setup(8, "water2", true);
-      setup(9, "earth", false);
+      setup(9, "dirt", false);
       setup(10, "sand", false);
       setup(11, "tree", true);
       setup(12, "shallow_water", true);
@@ -49,6 +49,18 @@ public class TileManager {
       setup(18, "water_cliffside_U", true);
       setup(19, "water_cliffside_UL", true);
       setup(20, "water_cliffside_UR", true);
+      setup(21, "grass_dirt_D", false);
+      setup(22, "grass_dirt_DL", false);
+      setup(23, "grass_dirt_DR", false);
+      setup(24, "grass_dirt_L", false);
+      setup(25, "grass_dirt_LD", false);
+      setup(26, "grass_dirt_LU", false);
+      setup(27, "grass_dirt_R", false);
+      setup(28, "grass_dirt_RD", false);
+      setup(29, "grass_dirt_RU", false);
+      setup(30, "grass_dirt_U", false);
+      setup(31, "grass_dirt_UL", false);
+      setup(32, "grass_dirt_UR", false);
 
   }
 
