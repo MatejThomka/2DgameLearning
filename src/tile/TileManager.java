@@ -19,7 +19,7 @@ public class TileManager {
   public TileManager(GamePanel gamePanel) {
     this.gamePanel = gamePanel;
 
-    tiles = new Tile[33];
+    tiles = new Tile[39];
     mapTileNum = new int[gamePanel.maxWorldCol][gamePanel.maxWorldRow];
 
     getTileImage();
@@ -61,6 +61,12 @@ public class TileManager {
       setup(30, "grass_dirt_U", false);
       setup(31, "grass_dirt_UL", false);
       setup(32, "grass_dirt_UR", false);
+      setup(33, "sand_dirt_D", false);
+      setup(34, "sand_dirt_L", false);
+      setup(35, "sand_dirt_R", false);
+      setup(36, "sand_dirt_U", false);
+      setup(37, "sand_grass_dirt_D", false);
+      setup(38, "sand_grass_dirt_U", false);
 
   }
 
