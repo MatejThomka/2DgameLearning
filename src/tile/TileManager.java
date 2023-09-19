@@ -32,7 +32,7 @@ public class TileManager {
       setup(1, "flower_grass", false);
       setup(2, "dirt_path_T_D", false);
       setup(3, "dirt_path_T_L", false);
-      setup(4, "wall1", true);
+      setup(4, "wall", true);
       setup(5, "dirt_path_T_R", false);
       setup(6, "dirt_path_T_U", false);
       setup(7, "dirt_grass", false);
@@ -61,10 +61,10 @@ public class TileManager {
       setup(30, "dirt_grass_U", false);
       setup(31, "dirt_grass_UL", false);
       setup(32, "dirt_grass_UR", false);
-      setup(33, "sand_dirt_D", false);
-      setup(34, "sand_dirt_L", false);
-      setup(35, "sand_dirt_R", false);
-      setup(36, "sand_dirt_U", false);
+      setup(33, "dirt", false);
+      setup(34, "dirt", false);
+      setup(35, "dirt", false);
+      setup(36, "dirt", false);
       setup(37, "dirt_path_cross", false);
       setup(38, "dirt_path_horizontal", false);
       setup(39, "dirt_path_vertical", false);
