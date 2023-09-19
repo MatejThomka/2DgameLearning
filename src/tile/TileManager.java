@@ -19,7 +19,7 @@ public class TileManager {
   public TileManager(GamePanel gamePanel) {
     this.gamePanel = gamePanel;
 
-    tiles = new Tile[39];
+    tiles = new Tile[51];
     mapTileNum = new int[gamePanel.maxWorldCol][gamePanel.maxWorldRow];
 
     getTileImage();
@@ -49,24 +49,34 @@ public class TileManager {
       setup(18, "water_cliffside_U", true);
       setup(19, "water_cliffside_UL", true);
       setup(20, "water_cliffside_UR", true);
-      setup(21, "grass_dirt_D", false);
-      setup(22, "grass_dirt_DL", false);
-      setup(23, "grass_dirt_DR", false);
-      setup(24, "grass_dirt_L", false);
-      setup(25, "grass_dirt_LD", false);
-      setup(26, "grass_dirt_LU", false);
-      setup(27, "grass_dirt_R", false);
-      setup(28, "grass_dirt_RD", false);
-      setup(29, "grass_dirt_RU", false);
-      setup(30, "grass_dirt_U", false);
-      setup(31, "grass_dirt_UL", false);
-      setup(32, "grass_dirt_UR", false);
+      setup(21, "dirt_grass_D", false);
+      setup(22, "dirt_grass_DL", false);
+      setup(23, "dirt_grass_DR", false);
+      setup(24, "dirt_grass_L", false);
+      setup(25, "dirt_grass_LD", false);
+      setup(26, "dirt_grass_LU", false);
+      setup(27, "dirt_grass_R", false);
+      setup(28, "dirt_grass_RD", false);
+      setup(29, "dirt_grass_RU", false);
+      setup(30, "dirt_grass_U", false);
+      setup(31, "dirt_grass_UL", false);
+      setup(32, "dirt_grass_UR", false);
       setup(33, "sand_dirt_D", false);
       setup(34, "sand_dirt_L", false);
       setup(35, "sand_dirt_R", false);
       setup(36, "sand_dirt_U", false);
-      setup(37, "sand_grass_dirt_D", false);
-      setup(38, "sand_grass_dirt_U", false);
+      setup(37, "dirt_path_cross", false);
+      setup(38, "dirt_path_horizontal", false);
+      setup(39, "dirt_path_vertical", false);
+      setup(40, "dirt_path_downToLeft", false);
+      setup(41, "dirt_path_downToRight", false);
+      setup(42, "dirt_path_upToLeft", false);
+      setup(43, "dirt_path_upToRight", false);
+      setup(44, "dirt_path_startOfPath_D", false);
+      setup(45, "dirt_path_startOfPath_L", false);
+      setup(46, "dirt_path_startOfPath_R", false);
+      setup(47, "dirt_path_startOfPath_U", false);
+
 
   }
 
