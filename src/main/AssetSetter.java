@@ -32,27 +32,23 @@ public class AssetSetter {
       gamePanel.superObject[3].worldY = 10 * gamePanel.tileSize;
 
       gamePanel.superObject[4] = new OBJ_Door(gamePanel);
-      gamePanel.superObject[4].worldX = 25 * gamePanel.tileSize;
-      gamePanel.superObject[4].worldY = 10 * gamePanel.tileSize;
+      gamePanel.superObject[4].worldX = 8 * gamePanel.tileSize;
+      gamePanel.superObject[4].worldY = 49 * gamePanel.tileSize;
 
       gamePanel.superObject[5] = new OBJ_Door(gamePanel);
-      gamePanel.superObject[5].worldX = 8 * gamePanel.tileSize;
-      gamePanel.superObject[5].worldY = 49 * gamePanel.tileSize;
+      gamePanel.superObject[5].worldX = 71 * gamePanel.tileSize;
+      gamePanel.superObject[5].worldY = 10 * gamePanel.tileSize;
 
       gamePanel.superObject[6] = new OBJ_Door(gamePanel);
-      gamePanel.superObject[6].worldX = 71 * gamePanel.tileSize;
-      gamePanel.superObject[6].worldY = 10 * gamePanel.tileSize;
+      gamePanel.superObject[6].worldX = 65 * gamePanel.tileSize;
+      gamePanel.superObject[6].worldY = 15 * gamePanel.tileSize;
 
-      gamePanel.superObject[7] = new OBJ_Door(gamePanel);
-      gamePanel.superObject[7].worldX = 65 * gamePanel.tileSize;
-      gamePanel.superObject[7].worldY = 15 * gamePanel.tileSize;
+      gamePanel.superObject[7] = new OBJ_Chest(gamePanel);
+      gamePanel.superObject[7].worldX = 6 * gamePanel.tileSize;
+      gamePanel.superObject[7].worldY = 49 * gamePanel.tileSize;
 
-      gamePanel.superObject[8] = new OBJ_Chest(gamePanel);
-      gamePanel.superObject[8].worldX = 6 * gamePanel.tileSize;
-      gamePanel.superObject[8].worldY = 49 * gamePanel.tileSize;
-
-      gamePanel.superObject[9] = new OBJ_Boots(gamePanel);
-      gamePanel.superObject[9].worldX = 7 * gamePanel.tileSize;
-      gamePanel.superObject[9].worldY = 27 * gamePanel.tileSize;
+      gamePanel.superObject[8] = new OBJ_Boots(gamePanel);
+      gamePanel.superObject[8].worldX = 7 * gamePanel.tileSize;
+      gamePanel.superObject[8].worldY = 27 * gamePanel.tileSize;
     }
 }
