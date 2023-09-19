@@ -43,7 +43,7 @@ public class Player extends Character{
     worldX = gamePanel.tileSize * 6;
     worldY = gamePanel.tileSize * 6;
     speed = 4;
-    direction = "down";
+    direction = "down_stay";
 
   }
 
