@@ -28,8 +28,8 @@ public class TileManager {
 
   public void getTileImage() {
 
-      setup(0, "grass1", false);
-      setup(1, "grass2", false);
+      setup(0, "grass", false);
+      setup(1, "flower_grass", false);
       setup(2, "grass_with_wall1", false);
       setup(3, "grass_with_wall2", false);
       setup(4, "wall1", true);
