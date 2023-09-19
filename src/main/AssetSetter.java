@@ -17,7 +17,7 @@ public class AssetSetter {
 
       gamePanel.superObject[0] = new OBJ_Key(gamePanel);
       gamePanel.superObject[0].worldX = 71 * gamePanel.tileSize;
-      gamePanel.superObject[0].worldY = 25 * gamePanel.tileSize;
+      gamePanel.superObject[0].worldY = 26 * gamePanel.tileSize;
 
       gamePanel.superObject[1] = new OBJ_Key(gamePanel);
       gamePanel.superObject[1].worldX = 24 * gamePanel.tileSize;
