@@ -123,6 +123,7 @@ public class TileManager {
     try {
 
       InputStream inputStream = getClass().getResourceAsStream(mapPath);
+      assert inputStream != null;
       BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 
       int col = 0;
