@@ -65,6 +65,7 @@ public class Player extends Character{
   }
 
   public BufferedImage setup(String imageName) {
+
     UtilityTool utilityTool = new UtilityTool();
     BufferedImage image = null;
 
@@ -83,15 +84,11 @@ public class Player extends Character{
     if (keyHandler.downPressed || keyHandler.leftPressed ||
         keyHandler.upPressed || keyHandler.rightPressed) {
 
-      if (keyHandler.upPressed) {
-        direction = "up";
-      } else if (keyHandler.downPressed) {
-        direction = "down";
-      } else if (keyHandler.leftPressed) {
-        direction = "left";
-      } else if (keyHandler.rightPressed){
-        direction = "right";
-      }
+      if (keyHandler.upPressed) direction = "up";
+      else if (keyHandler.downPressed) direction = "down";
+      else if (keyHandler.leftPressed) direction = "left";
+      else if (keyHandler.rightPressed) direction = "right";
+
 
       // CHECK TILE COLLISION
       collisionOn = false;
@@ -100,6 +97,7 @@ public class Player extends Character{
       // CHECK OBJECT COLLISION
       int objectIndex = gamePanel.collisionChecker.checkObject(this, true);
       pickUpObject(objectIndex);
+
       // IF COLLISION IS FALSE, PLAYER CAN MOVE
       if (!collisionOn) {
         switch (direction) {
@@ -141,36 +139,34 @@ public class Player extends Character{
       String objectName = gamePanel.superObject[index].name;
 
       switch (objectName) {
-        case "Key":
-          gamePanel.playSoundEffect(1);
-          hasKey++;
-          gamePanel.superObject[index] = null;
-          gamePanel.ui.showMessage("You found a key!");
-          break;
-        case "Door":
-          if (hasKey > 0) {
-            gamePanel.playSoundEffect(3);
-            gamePanel.superObject[index] = null;
-            hasKey--;
-            gamePanel.ui.showMessage("You opened the door!");
-          }
-          else {
-            gamePanel.ui.showMessage("You need a key!");
-          }
-          System.out.println("Key: " + hasKey);
-          break;
-        case "Boots":
-          gamePanel.playSoundEffect(2);
-          speed += 2;
-          gamePanel.superObject[index] = null;
-          gamePanel.ui.showMessage("You picked up a boots! You are faster now!");
-          break;
-        case "Chest":
-          gamePanel.playSoundEffect(4);
-          gamePanel.superObject[index] = null;
-          gamePanel.ui.gameFinished = true;
-          gamePanel.stopMusic();
-          break;
+        case "Key": gamePanel.playSoundEffect(1);
+                    hasKey++;
+                    gamePanel.superObject[index] = null;
+                    gamePanel.ui.showMessage("You found a key!");
+                    break;
+
+        case "Door": if (hasKey > 0) {
+                        gamePanel.playSoundEffect(3);
+                        gamePanel.superObject[index] = null;
+                        hasKey--;
+                        gamePanel.ui.showMessage("You opened the door!");
+                     }
+                     else gamePanel.ui.showMessage("You need a key!");
+
+                     System.out.println("Key: " + hasKey);
+                     break;
+
+        case "Boots": gamePanel.playSoundEffect(2);
+                      speed += 2;
+                      gamePanel.superObject[index] = null;
+                      gamePanel.ui.showMessage("You picked up a boots! You are faster now!");
+                      break;
+
+        case "Chest": gamePanel.playSoundEffect(4);
+                      gamePanel.superObject[index] = null;
+                      gamePanel.ui.gameFinished = true;
+                      gamePanel.stopMusic();
+                      break;
       }
     }
   }
@@ -180,50 +176,25 @@ public class Player extends Character{
     BufferedImage image = null;
 
     switch (direction) {
-      case "up":
-        if (spriteNum == 1) {
-          image = up1;
-        }
-        if (spriteNum == 2) {
-          image = up;
-        }
-        if (spriteNum == 3) {
-          image = up2;
-        }
-        break;
-      case "down":
-        if (spriteNum == 1) {
-          image = down1;
-        }
-        if (spriteNum == 2) {
-          image = down;
-        }
-        if (spriteNum == 3) {
-          image = down2;
-        }
-        break;
-      case "left":
-        if (spriteNum == 1) {
-          image = left1;
-        }
-        if (spriteNum == 2) {
-          image = left;
-        }
-        if (spriteNum == 3) {
-          image = left2;
-        }
-        break;
-      case "right":
-        if (spriteNum == 1) {
-          image = right1;
-        }
-        if (spriteNum == 2) {
-          image = right;
-        }
-        if (spriteNum == 3) {
-          image = right2;
-        }
-        break;
+      case "up": if (spriteNum == 1) image = up1;
+                 if (spriteNum == 2) image = up;
+                 if (spriteNum == 3) image = up2;
+                 break;
+
+      case "down": if (spriteNum == 1) image = down1;
+                   if (spriteNum == 2) image = down;
+                   if (spriteNum == 3) image = down2;
+                   break;
+
+      case "left": if (spriteNum == 1) image = left1;
+                   if (spriteNum == 2) image = left;
+                   if (spriteNum == 3) image = left2;
+                   break;
+
+      case "right": if (spriteNum == 1) image = right1;
+                    if (spriteNum == 2) image = right;
+                    if (spriteNum == 3) image = right2;
+                    break;
 
     }
 
