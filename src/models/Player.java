@@ -52,13 +52,13 @@ public class Player extends Character{
     up = setup("up_stay");
     up1 = setup("up1");
     up2 = setup("up2");
-    down = setup("down_stay");
+    down = setup("down");
     down1 = setup("down1");
     down2 = setup("down2");
     left = setup("left_stay");
     left1 = setup("left1");
     left2 = setup("left2");
-    right = setup("right_stay");
+    right = setup("right");
     right1 = setup("right1");
     right2 = setup("right2");
 
