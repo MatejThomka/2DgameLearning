@@ -49,13 +49,13 @@ public class Player extends Character{
 
   public void getPlayerImage() {
 
-    up = setup("up_stay");
+    up = setup("up");
     up1 = setup("up1");
     up2 = setup("up2");
     down = setup("down");
     down1 = setup("down1");
     down2 = setup("down2");
-    left = setup("left_stay");
+    left = setup("left");
     left1 = setup("left1");
     left2 = setup("left2");
     right = setup("right");
@@ -110,12 +110,14 @@ public class Player extends Character{
 
       spriteCounter++;
       if (spriteCounter > 5) {
-        if (spriteNum == 1) {
-          spriteNum = 2;
-        } else if (spriteNum == 2) {
-          spriteNum = 3;
-        } else if (spriteNum == 3) {
+        if (spriteNum == 2) {
           spriteNum = 1;
+        } else if (spriteNum == 1) {
+          spriteNum = 4;
+        } else if (spriteNum == 4) {
+          spriteNum = 3;
+        } else if (spriteNum == 3){
+          spriteNum = 2;
         }
         spriteCounter = 0;
       }
@@ -179,21 +181,25 @@ public class Player extends Character{
       case "up": if (spriteNum == 1) image = up1;
                  if (spriteNum == 2) image = up;
                  if (spriteNum == 3) image = up2;
+                 if (spriteNum == 4) image = up;
                  break;
 
       case "down": if (spriteNum == 1) image = down1;
                    if (spriteNum == 2) image = down;
                    if (spriteNum == 3) image = down2;
+                   if (spriteNum == 4) image = down;
                    break;
 
       case "left": if (spriteNum == 1) image = left1;
                    if (spriteNum == 2) image = left;
                    if (spriteNum == 3) image = left2;
+                   if (spriteNum == 4) image = left;
                    break;
 
       case "right": if (spriteNum == 1) image = right1;
                     if (spriteNum == 2) image = right;
                     if (spriteNum == 3) image = right2;
+                    if (spriteNum == 4) image = right;
                     break;
 
     }
